@@ -1,0 +1,52 @@
+{
+    "name": "@wxn0brp/db-storage-xlsx",
+    "version": "0.110.0",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "description": "ValtheraDB Storage XLSX",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/wxn0brP/ValtheraDB-storage-xlsx.git"
+    },
+    "homepage": "https://github.com/wxn0brP/ValtheraDB-storage-xlsx",
+    "author": "wxn0brP",
+    "license": "MIT",
+    "type": "module",
+    "keywords": [
+        "valthera",
+        "valtheradb",
+        "vdb-adapter",
+        "xlsx",
+        "excel"
+    ],
+    "scripts": {
+        "build": "tsc && tsc-alias"
+    },
+    "peerDependencies": {
+        "@wxn0brp/db-core": "^0.11.2"
+    },
+    "dependencies": {
+        "exceljs": "^4.4.0"
+    },
+    "devDependencies": {
+        "@types/bun": "*",
+        "@wxn0brp/db-core": "^0.11.2",
+        "tsc-alias": "^1",
+        "typescript": "^6"
+    },
+    "files": [
+        "dist"
+    ],
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.js",
+            "default": "./dist/index.js"
+        },
+        "./*": {
+            "types": "./dist/*.d.ts",
+            "import": "./dist/*.js",
+            "default": "./dist/*.js"
+        }
+    }
+}
