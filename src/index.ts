@@ -4,7 +4,7 @@ import { DbStorageXlsx, Opts } from "./action";
 export function createXlsxValthera(opts: Opts) {
     const xlsxStorage = new DbStorageXlsx(opts);
     return new ValtheraClass({
-        dbAction: xlsxStorage
+        adapter: xlsxStorage
     });
 }
 
